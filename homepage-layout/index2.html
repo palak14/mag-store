@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mag Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="styles/style2.css">
+
+</head>
+<body onLoad="tabContentDisplay('trending')">
+
+
+<header>
+	<div class="navigation-bar-container" >
+		<div class="navigation-bar">
+			<div class="logo-div"><img class="logo" src="assests\image\logo.png"></div>
+			<div class="search-option "><input type="text" placeholder="search..."><i class="fa fa-search" aria-hidden="true"></i></div>
+			<div class="cart-div" id="cart-div" data-toggle="modal" data-target="#myModal"><p class="pull-right cart-option"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>CART<span id="totalItems" style="display:none"></span></p></div>
+		</div>
+
+	</div>
+</header>
+
+ <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="text-center">You Have Selected !!!!</h4>
+        </div>
+		<div id="empty-cart">
+			<p>No items in your cart</p>
+			<i class="fa fa-frown-o" aria-hidden="true"></i>
+			<h6>Please select something !!!</6>
+		</div>
+        <div id="nonempty-cart" class="modal-body" style="display:none">
+        <ul class="ItemsList" id="ItemsList">
+		</ul>
+		<div class="totalAmountContainer">
+		<p>Total Amount To Be Paid : <span class="totalAmount"></span></p>
+		<button class="Proceed"><a href="pay.html">Proceed To Pay</a></button>
+		</div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+
+
+<section>
+	<div class="banner">
+	<div class="layer">
+		<h1>Mag Store</h1>
+	</div>	
+	</div>
+</section>
+
+<div class="container">
+
+		<ul class="tab-container">
+			<li id="trending-tab" class="active" onclick="tabContentDetails('trending')">Trending</li>
+			<li id="entertain-tab" onclick="tabContentDetails('entertainment')">Entertainment</li>
+			<li id="travel-tab" onclick="tabContentDetails('travel')">Travel</li>
+			<li id="food-tab" onclick="tabContentDetails('food')">Food</li>
+		</ul>
+
+	<div id="trending" class="tab-content">
+    <h2>Trending</h2>
+   <div class="row">
+    <div class="col-md-12 trending">
+
+   </div>
+	
+   </div>
+   </div>
+
+<div id="entertainment" class="tab-content" style="display:none">
+  <h2>Entertainment</h2>
+<div class="row">
+  <div class="col-md-12 entertainment">
+
+   </div>
+	
+
+</div>
+</div>
+
+<div id="travel" class="tab-content" style="display:none">
+  <h2>Travel</h2>
+<div class="row">
+  <div class="col-md-12 travel">
+
+   </div>
+</div>
+</div>
+<div id="food" class="tab-content" style="display:none">
+  <h2>Food</h2>
+
+<div class="row">
+  <div class="col-md-12 food">
+
+   </div>
+	
+
+</div>
+	
+</div>
+</div>
+
+
+
+
+		<div class="footer">
+			<div class="footer-logo">
+				<img class="logo" src="assests\image\logo.png">
+			</div>
+			<div class="contact-us">
+			 <h3>Contact Us</h3>
+			 <ul>
+			 	<li class="number"><i class="fa fa-phone" aria-hidden="true"></i>4567891234</li>
+			 	<li class="email-id"><i class="fa fa-envelope" aria-hidden="true"></i> timeinc@2017</li>
+			 </ul>
+				
+			</div>
+			<div class="follow-us"> 
+				<h3>Follow Us On</h3>
+				 <ul>
+				 	<li class="facebook-link"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</li>
+				 	<li class="twitter-link"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</li>
+				 </ul>
+			</div>
+		</div>
+
+
+<script type="text/javascript" src="scripts/script2.js"></script>
+</body>
+</html>
