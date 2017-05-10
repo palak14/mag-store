@@ -10,7 +10,7 @@ function display(){
     td2.innerHTML=	sessionStorage.getItem("title"+i);
 	tr.appendChild(td2); 
 	var td3=document.createElement("td");
-    td3.innerHTML=	sessionStorage.getItem("cost"+i);
+    td3.innerHTML=	sessionStorage.getItem("costqty"+i);
 	tr.appendChild(td3);
 	
 	document.getElementById("payment").innerHTML="Pay $ "+sessionStorage.getItem("totalcost"+i);

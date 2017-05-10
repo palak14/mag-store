@@ -265,14 +265,14 @@ if(sessionStorage.getItem("index") == null)
 	input.onclick=function(){
 	 var qty=document.getElementById(input.id).value;
 	 var totalCost=qty*price;
-	 sessionStorage.setItem("cost"+index, totalCost);
-	 console.log("index " + sessionStorage.getItem("index") + " " + sessionStorage.getItem("cost"+index));
+	 sessionStorage.setItem("cost"+input.id, totalCost);
+	 console.log("index " + sessionStorage.getItem("index") + " " + sessionStorage.getItem("cost"+input.id));
 	totalItemCost="$ "+totalCost;
 
 	totalsum=totalsum+totalCost;
 	 sessionStorage.setItem("totalcost"+index,totalsum);
 	k++;
-	cost.innerHTML= sessionStorage.getItem("cost"+index);
+	cost.innerHTML= sessionStorage.getItem("cost"+input.id);
 	var footer=document.getElementsByClassName("totalAmount")[0];
 	footer.innerHTML=" $ "+sessionStorage.getItem("totalcost"+index);
 	console.log(sessionStorage.getItem("totalcost"+index));
