@@ -353,7 +353,7 @@ if(sessionStorage.getItem("count") == null || sessionStorage.getItem("count") ==
 	}
     list.appendChild(cancel);
 	console.log(sessionStorage.getItem("cost"+n));
-	cost.innerHTML= sessionStorage.getItem("cost"+n);
+	cost.innerHTML= sessionStorage.getItem("costqty"+n);
 	var footer=document.getElementsByClassName("totalAmount")[0];
 	footer.innerHTML=" $ "+sessionStorage.getItem("totalcost"+n);
 	
